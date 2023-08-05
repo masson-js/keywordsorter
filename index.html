@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="input__container">
+          <textarea placeholder="put your keywords here" type="text" class="input" id="input"></textarea>
+        </div>
+        <div class="count__container">
+          <p class="counter__text">input keywords: <span id="input-length">0</span></p>
+          <p class="counter__text">output keywords: <span id="output-length">0</span></p>
+          <button class="sort__button" value="button" id="btn" >Sort</button>
+        </div>
+      <div class="output__container">
+        <textarea placeholder="you will see sorted keywords here, use 'copy button' for copy to clipborad" class="output" id="output"></textarea>
+        <button class="copy__button" value="button" id="copy-button" >Copy to clipboard</button>
+      </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
