@@ -3,6 +3,8 @@
   margin-top: 50px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .input__container {
@@ -20,6 +22,14 @@
 
 }
 
+.input {
+  display: flex;
+  word-wrap: break-word;
+  width: 400px;
+  height: 150px;
+}
+/*  */
+
 .counter__text {
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
@@ -27,11 +37,7 @@
   border-radius: 10px;
   border: solid 1px rgb(0, 0, 0);
 }
-.input {
-  word-wrap: break-word;
-  width: 600px;
-  height: 150px;
-}
+
 .sort__button {
   background-color: rgb(134, 57, 241);
   color: rgb(255, 255, 255);
@@ -40,24 +46,27 @@
   margin-bottom: 20px;
 
 }
-
 .sort__button:hover {
   color:rgb(180, 180, 180);
-
 }
 
+/*  */
 
 .output__container {
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  width: 400px;
+  padding: 0;
 }
 .output {
-  width: 600px;
+  width: 100%;
+  padding: 0;
   height: 150px;
-
 }
+
+/*  */
 
 .copy__button {
   background-color: rgb(134, 57, 241);
@@ -70,4 +79,13 @@
 
 .copy__button:hover {
   color:rgb(180, 180, 180);
+}
+
+@media only screen and (max-width: 414px) {
+  .input__container, .output__container, .input {
+    width: 350px;
+  }
+  .count__container {
+    border: none;
+  }
 }
